@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+
+
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/newdb
+    password: 123
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 30MB
+      max-request-size: 100MB
+
+
+
+
+
+
+
