@@ -21,6 +21,9 @@ public class StudentService {
         return repository.findAll();
     }
 
+    public   List<StudentModel> getStudentBySubGroupId(Long subGroupId) {
+        return repository.findAllBySubGroupId(subGroupId);
+    }
     public String deleteElement(Long id) {
         try {
 

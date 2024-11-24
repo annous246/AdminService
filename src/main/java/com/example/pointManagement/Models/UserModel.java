@@ -1,9 +1,14 @@
 package com.example.pointManagement.Models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Inheritance(strategy = InheritanceType.JOINED)
-@Entity
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Data
 public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "time_frame_sequence")

@@ -19,7 +19,7 @@ public class SubGroupService {
     private final SubGroupRepository repository;
 
 
-    List<SubGroupModel> getAllElements() {
+    public List<SubGroupModel> getAllElements() {
         return repository.findAll();
     }
 

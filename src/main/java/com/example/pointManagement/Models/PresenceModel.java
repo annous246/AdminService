@@ -2,11 +2,15 @@ package com.example.pointManagement.Models;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
 @Entity
+@RequiredArgsConstructor
+@AllArgsConstructor
 @Data
 public class PresenceModel {
 
@@ -23,7 +27,8 @@ public class PresenceModel {
 
     @ManyToMany
     @JoinTable()
-    List<StudentModel> Students;
+    List<StudentModel> students;
+
 
     @ManyToOne
     TimeFrame timeFrame;

@@ -20,7 +20,7 @@ public class TimeFrameService {
     private final TimeFrameRepository repository;
 
 
-    List<TimeFrame> getAllElements() {
+    public List<TimeFrame> getAllElements() {
         return repository.findAll();
     }
 

@@ -17,7 +17,7 @@ public class GroupService {
     private final GroupRepository groupRepository;
 
 
-    List<GroupModel> getAllGroups() {
+    public List<GroupModel> getAllGroups() {
         return groupRepository.findAll();
     }
 

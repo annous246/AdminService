@@ -17,6 +17,7 @@ import java.util.Optional;
 @Data
 @RequiredArgsConstructor
 @Service
+
 public class PointService {
 
     private final PointRepository pointRepository;

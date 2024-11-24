@@ -8,11 +8,13 @@ import com.example.pointManagement.Models.TimeTableModel;
 import com.example.pointManagement.Repositories.TimeTableRepository;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Data
 @RequiredArgsConstructor
+@Service
 public class TimeTableService {
 
     private final TimeTableRepository repository;
@@ -34,7 +36,7 @@ public class TimeTableService {
         }
     }
 
-    String addElement(TimeTableModel model) {
+    public String addElement(TimeTableModel model) {
         try {
             repository.save(model);
             return "element added";

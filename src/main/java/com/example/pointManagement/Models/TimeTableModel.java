@@ -1,9 +1,15 @@
 package com.example.pointManagement.Models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 @Entity
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Data
 public class TimeTableModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "time_table_sequence")
@@ -30,6 +36,3 @@ public class TimeTableModel {
 
 
 
-enum WeekType{
-    A,B
-}

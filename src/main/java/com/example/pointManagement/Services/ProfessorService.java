@@ -18,7 +18,7 @@ public class ProfessorService {
     private final ProfessorRepository professorRepository;
 
 
-    List<ProfessorModel> getAllElements() {
+    public List<ProfessorModel> getAllElements() {
         return professorRepository.findAll();
     }
 

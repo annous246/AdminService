@@ -6,9 +6,9 @@ server:
 spring:
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/newdb
-    password: 123
-    username: postgres
+    url: jdbc:postgresql://localhost:5332/pmadmin
+    password: password
+    username: WigoAdmin
     driver-class-name: org.postgresql.Driver
 
 
